@@ -1,0 +1,228 @@
+/* GENERAL */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+body::-webkit-scrollbar{
+    width:0.5em;
+}
+body::-webkit-scrollbar-track{
+    background:#F6FAFC;
+}
+body::-webkit-scrollbar-thumb{
+    background:#7ab3fd;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 13px;
+    font-family: 'Montserrat';
+    letter-spacing: 2px;
+    line-height: 25px;
+}
+.container{
+    max-width: 1100px;
+    margin:0 auto;
+}
+/* HEADER  */
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 10vh;
+    z-index: 20;
+    background-color: white;
+    padding-bottom: 25px;
+    padding-top: 10px;
+}
+.logo{
+    width:100px;
+    height:60px;   
+    position: relative;
+    top:10px;
+    left: -250px;
+}
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    width:40%;
+    position: relative;
+    top:10px;
+    left: -70px;
+}
+.nav-links li a{
+    color: black;
+    text-decoration: none;
+    display:inline-block;
+}
+.nl::after{
+    content: "";
+    display: block;
+    width: 0;
+    height:2px;
+    background:black;
+    transition: width .3s;
+}
+.nl:hover::after{
+    width:100%;
+    transition: width .3s;
+}
+.nav-links li{
+    list-style: none;
+    display: inline-block;
+}
+.nav-icons{
+    display: flex;
+    justify-content: space-around;
+    width:10%;
+    position: relative;
+    top:10px;
+    margin-right:-50px;
+}
+.nav-icons a{
+    color:black;
+    text-decoration: none;
+}
+.nav-icons li{
+    list-style: none;
+    padding-right: 30px;
+}
+.nav-icons i{
+    font-size:20px;
+    color: black;
+}
+
+/* MAIN */
+.login{
+    background: #E6F9FD;
+    padding: 10px;
+}
+.title{
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 20px;
+    font-family: 'Montserrat';
+    letter-spacing: 3px;
+
+}
+.instructions{
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 15px;
+    font-family: 'Roboto';
+    letter-spacing: 0px;
+}
+.login-inner{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.login-inner form input{
+    background-color: transparent;
+    border: lightgray solid 0.5px;
+    font-family: 'Roboto';
+    letter-spacing: 0;
+    width:400px;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+.login-inner button{
+    background-color: black;
+    color: white;
+    border:black solid 0.5px;
+    padding: 10px 20px;
+    letter-spacing: 5px;
+    width: 400px;
+    cursor: pointer;
+    margin-bottom: 15px;
+ }
+ form{
+     margin:0 32%;
+ }
+ .login-inner a{
+     text-decoration: none;
+     color:black;
+     margin-left: 40%;
+     font-family: 'Roboto';
+     letter-spacing: 0;
+     font-size: 15px;
+ }
+ .login-inner button:hover{
+    background-color: transparent;
+    color: black;
+    border:black solid 0.5px;
+    padding: 10px 20px;
+    letter-spacing: 5px;
+    width: 400px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    transition-duration: 5ms;
+ }
+/* FOOTER  */
+.footer{
+    background-color: #3CABC7;
+    font-family:'Roboto';
+    letter-spacing: 0;
+}
+.footer-inner{
+   display: flex;
+   justify-content: space-between;
+   padding-top: 80px;
+}
+.news-input button{
+    background-color: black;
+    color: white;
+    border:none;
+    padding: 10px 20px;
+    letter-spacing: 5px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+.news-input input{
+    background-color: transparent;
+    border-color: rgb(219, 219, 219);
+    padding: 10px 20px;
+    width: 400px;
+    border-style: solid;
+    border-width:0.5px;
+    margin-top: 20px;
+}
+.news-input ::placeholder{
+    color: black;
+    font-family:'Roboto';
+    letter-spacing: 1px;
+}
+.newsletter p, span{
+    padding-bottom: 20px;
+}
+.newsletter span{
+    font-family:'Roboto';
+    letter-spacing: 0.5px;
+    font-size: 15px;
+}
+.rights{
+    text-align: center;
+    margin-top: 30px;
+    padding: 80px 0 20px 0;
+
+}
+.socials a{
+    text-decoration: none;
+    color:black;
+    margin-right: 15px;
+}
+.socials i{
+    font-size: 25px;
+}
+.socials p{
+    padding-bottom: 20px;
+}
+.import-links a{
+    text-decoration: none;
+    color:black;
+    font-family:'Roboto';
+    letter-spacing: 0.5px;
+    font-size: 15px;
+}
+.import-links p{
+    padding-bottom: 20px;
+}
